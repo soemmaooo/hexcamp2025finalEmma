@@ -1,0 +1,518 @@
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  line-height: 1.5;
+  background-color: #FBFBFB;
+}
+////
+h1{
+  font-size: 120px;
+  font-weight: 900;
+}
+h2{
+    font-size: 64px;
+    font-weight: $fw-l;
+    margin-bottom: 24px;
+}
+h3{
+  font-size: 28px;
+  font-weight: $fw-l;
+}
+h4{
+  font-size: 24px;
+  font-weight: $fw-l;
+}
+.df{
+    display: flex;
+}
+.tdn{
+    text-decoration: none;
+}
+.jcc{
+    justify-content: center;
+}
+.aic{
+  align-items: center;
+}
+.fdcolumn{
+  flex-direction: column;
+}
+.jcsb{
+  justify-content: space-between;
+}
+.jcsa{
+  justify-content: space-around;
+}
+.divider{
+  width: 40px;
+  height: 3px;
+  background-color: $primary-color;
+  margin: 24px 0px;
+  border-radius: 30px;
+}
+.pb-8{
+  padding-bottom: 8px;
+}
+.pb-16{
+  padding-bottom: 16px;
+}
+.mr-8{
+  margin-right: 8px;
+}
+.mb-8{
+  margin-bottom: 8px;
+}
+.mb-16{
+  margin-bottom: 16px;
+}
+.mb-24{
+  margin-bottom: 24px;
+}
+.mt-16{
+  margin-top: 16px;
+}
+.textBlue{
+  color: $primary-color;
+}
+.fw-m{
+  font-weight: $fw-m;
+}
+.btnGray{
+      text-decoration: none;
+      border-radius: 40px;
+      border: 1px solid black;
+      padding: 8px 16px;
+      color: #4B4B4B;
+      display: inline-block;
+}
+.btnBlue{
+    text-decoration: none;
+    border-radius: 40px;
+    border: 1px solid $primary-color;
+    padding: 8px 16px;
+    color: $primary-color;
+    display: inline-block;
+    background: #FFF;
+}
+.borderB{
+  border-bottom: 1px solid #4B4B4B;
+}
+.borderT{
+  border-top: 1px solid #4B4B4B;
+}
+    
+////
+header{
+
+  nav{
+    li{
+        margin: 24px 20px;
+        a{
+         text-decoration: none;
+         font-size: $fz-large;
+         font-weight: $fw-l;
+         color: black;
+        }
+    }
+  }
+}
+
+.banner{
+  position: relative;
+
+  .leftBanner{
+     width: 50%;
+     background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/Hero%20Section.png?raw=true);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+   }
+
+  .rightBanner{
+     width: 50%;
+     background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/Hero%20Section2.png?raw=true;);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+        .bannerText{
+         margin: 50% 10%;
+         color: $primary-color;
+         font-size: $fz-large;
+        }
+    }
+  .bannerAbout{
+     position: absolute;
+     max-width: 1077px;
+     background-color: white;
+     margin: 12px;
+     padding: 80px 40px;
+     right: 30px;
+     bottom: -100px;
+
+      .bannerAboutText{
+         font-size: $fz-large;
+         padding-bottom: 16px;
+        }
+    }
+}
+@media (max-width: 960px){
+    h1{
+     font-size: 52px;
+    }
+    .banner{
+     flex-direction: column;
+
+     .leftBanner{
+         width: 100%;
+         height: 375px;
+        }
+     .rightBanner{
+         width: 100%;
+         height: 375px;
+         .bannerText{
+             margin: 10% 24px;
+            }
+        }
+     .bannerAbout{
+            right: 0px;
+            bottom: -25%;
+            padding: 12px;
+            margin-left: 12px;
+            margin-right: 12px;
+            .bannerAboutText{
+              font-size: 24px;
+            }
+        }
+    }
+}
+
+.service{
+  max-width: 1296px;
+  margin: 80px auto;
+  .serviceImg{
+    max-width: 50%;
+  }
+  .serviceAll{
+    padding: 32px 110px;
+    .serviceItem{
+    margin-bottom: 64px;
+      .serviceCon{
+        background-color: white;
+        max-width: 480px;
+        margin: auto 0;
+        padding: 24px;
+        z-index: 1;
+        p{
+          font-size: 16px;
+          font-weight: $fw-m;
+          color: #4B4B4B;
+        }
+      }
+      .ml-05{
+      margin-left: -5%;
+      }
+      .mr-05{
+      margin-right: -5%;
+      }
+  }
+
+  }
+  .more{
+    justify-content: flex-end;
+    font-size: $fz-large;
+    font-weight: $fw-m;
+    img{
+      height: 40px;
+    }
+  }
+  
+}
+@media (max-width: 768px) {
+  .service{
+    margin: 200px auto;
+    h2{
+      font-size: 48px;
+    }
+    .serviceAll{
+      margin: 0;
+      padding: 0;
+    
+      .serviceItem {
+      flex-direction: column;
+      padding: 16px 12px;
+      margin-bottom: 0px;
+
+      .serviceImg {
+      order: 0;
+      max-width: 100%;
+      }
+
+      .serviceCon {
+      order: 1;
+      width: 100%;
+      margin: 0;
+      }
+
+    .ml-05,
+    .mr-05 {
+      margin: 0 ;
+    }
+  }
+  }
+  .more{
+    padding-right: 12px;
+    flex-direction: column;
+    align-items: flex-end;
+    img{
+      width: auto;
+    }
+  }
+  
+}
+}
+
+.blogLink{
+  max-width: 1432px;
+  margin: 80px auto;
+  border-top: 1px solid black;
+  h2{
+    font-size: 48px;
+  }
+  .blogCon{
+    align-items: center;
+    .blogArrow{
+      width: 44px;
+      display: inline-block;
+    }
+    .blogItem{
+    max-width: 33%;
+    margin: 0 12px;
+    }
+    .blogTag{
+      font-size: 24px;
+      color: $primary-color;
+      .tag{
+        font-size: $fz-base;
+        background-color: $primary-color;
+        color: white;
+        border-radius: 40px;
+        padding: 6px 12px;
+      }
+    }
+    
+    
+    
+  }
+  .mobileArrow {
+    display: none;
+  }
+  
+}
+@media (max-width: 768px) {
+  .blogLink {
+    padding: 0 16px;
+    position: relative;
+
+    .blogCon {
+      overflow: hidden;
+      flex-wrap: nowrap;
+      position: relative;
+      padding-bottom: 64px; 
+
+      .blogItem {
+        display: none;
+        max-width: 100%;
+        margin: 0;
+      }
+
+      .blogItem.active {
+        display: block;
+      }
+
+      .blogArrow {
+        display: none;
+      }
+    }
+    .mobileArrow {
+      display: flex;
+      position: absolute;
+      bottom: 1rem;
+      right: 1rem;
+      gap: 8px;
+      z-index: 10;
+      .arrowBtn {
+        width: 40px;
+        height: 40px;
+      }
+  }
+}
+}
+
+.case{
+  border-top: 1px solid black;
+  max-width: 1296px;
+  margin: 0 auto;
+  margin-bottom: 64px;
+  padding: 0 12px;
+  h2{
+    font-size: 48px;
+  }
+  .caseImg{
+    width: 60%;
+    background-color: #EDEDED;
+    padding: 24px;
+  }
+  .caseText{
+    width: 50%;
+
+    .caseTextTop {
+      max-width: 526px;
+      max-height: 296px;
+      padding: 80px 40px;
+      background-color: #fff;
+      margin-left: -20%;
+      margin-top: 5%;
+
+    }
+    .caseTextBottom {
+      max-height: 312px;
+      padding: 80px 40px;
+      background-color: #F5F5F5;
+      margin-left: 10%;
+      margin-top: -10%;
+
+    }
+  }
+  .stories{
+    margin-top: 40px;
+    padding: 24px;
+    gap: 20px;
+    background-color: #F5F5F5;
+    .storiesItem{
+      .check{
+      width: 1rem;
+      height: 1rem;
+      }
+    }
+  }
+ 
+}
+@media (max-width: 768px){
+  .caseCon{
+    flex-direction: column;
+    .caseImg{
+      width: 100%;
+    }
+    .caseText{
+      width: 100%;
+       .caseTextTop {
+        margin: 0;
+        padding: 40px 24px;
+      }
+      .caseTextBottom {
+        margin: 0;
+        padding: 40px 24px;
+      }
+    }
+   
+  }
+  .stories{
+    flex-direction: column;
+    .storiesItem{
+      .check{
+      width: 1rem;
+      height: 1rem;
+      }
+    }
+  }
+
+  }
+
+.news{
+  border-top: 1px solid black;
+    .peopleImg{
+     width: 50%;
+     background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/photo9.png?raw=true);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+    }
+    .newsCon{
+      width: 50%;
+     background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/Hero%20Section2.png?raw=true);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+    }
+    .newsText{
+         margin: 50% 10%;
+         background-color: #fff;
+         padding: 80px;
+         gap:24px;
+         .newsInput{
+          background:#F1F1F1;
+          border: none;
+          padding: 8px 16px;
+          width: 100%;
+          margin-bottom: 8px;
+         }
+        }
+}
+@media (max-width: 768px){
+  .news{
+    flex-direction: column;
+    .peopleImg{
+      width: 100%;
+      height: 375px;
+    }
+    .newsCon{
+      width: 100%;
+      .newsText{
+        h2{
+          font-size: 48px;
+        }
+        margin: 12px;
+        padding: 40px 24px;
+      }
+    }
+  }
+}
+
+.contact{
+  border-top: 1px solid black;
+  max-width: 1296px;
+  margin: 80px auto;
+  .contactList{
+    border-bottom: 1px solid black;
+    padding: 16px 0px;
+    display: flex;
+    justify-content: space-between;
+    span{
+      font-size: 28px;
+      a{
+      color: #000;
+      font-size: 32px;
+      }
+    }   
+  }
+}
+@media (max-width: 768px){
+  .contact{
+    padding: 0 12px;
+    .contactList{
+      flex-direction: column;
+      span{
+      font-size: 24px;
+      
+      a{
+      font-size: 24px;
+      }
+    }   
+    }
+    
+  }
+}
+footer{
+  padding: 24px 0;
+  display: flex;
+  justify-content: center;
+}
